@@ -1,0 +1,401 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0); }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+
+/* line 72, static/css/style.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2c3e50;
+  background-color: #ffffff;
+  overflow-x: hidden; }
+
+/* line 82, static/css/style.scss */
+.text-primary {
+  color: #2c3e50 !important; }
+
+/* line 86, static/css/style.scss */
+.bg-primary {
+  background-color: #2c3e50 !important; }
+
+/* line 90, static/css/style.scss */
+.btn-primary {
+  background-color: #2c3e50;
+  border: none;
+  transition: all 0.3s ease-in-out; }
+  /* line 95, static/css/style.scss */
+  .btn-primary:hover {
+    background-color: #1a252f; }
+
+/* line 100, static/css/style.scss */
+a {
+  color: #2c3e50;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; }
+  /* line 105, static/css/style.scss */
+  a:hover {
+    color: #3498db;
+    text-decoration: none; }
+
+/* line 112, static/css/style.scss */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0; }
+  /* line 117, static/css/style.scss */
+  .navbar .navbar-brand {
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 1.5rem; }
+    /* line 122, static/css/style.scss */
+    .navbar .navbar-brand:hover {
+      color: #3498db; }
+    /* line 126, static/css/style.scss */
+    .navbar .navbar-brand i {
+      margin-right: 0.5rem; }
+  /* line 131, static/css/style.scss */
+  .navbar .nav-link {
+    color: #2c3e50;
+    font-weight: 500;
+    margin-right: 1rem; }
+    /* line 136, static/css/style.scss */
+    .navbar .nav-link.active {
+      color: #3498db; }
+    /* line 140, static/css/style.scss */
+    .navbar .nav-link:hover {
+      color: #3498db; }
+    /* line 144, static/css/style.scss */
+    .navbar .nav-link.btn {
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      font-weight: 600; }
+      /* line 149, static/css/style.scss */
+      .navbar .nav-link.btn:hover {
+        background-color: #3e5871; }
+  /* line 155, static/css/style.scss */
+  .navbar .navbar-toggler {
+    border: none; }
+    /* line 158, static/css/style.scss */
+    .navbar .navbar-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(44,62,80, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E"); }
+
+/* line 166, static/css/style.scss */
+header .carousel {
+  height: 100vh; }
+  /* line 169, static/css/style.scss */
+  header .carousel .carousel-item {
+    height: 100vh;
+    position: relative; }
+    /* line 173, static/css/style.scss */
+    header .carousel .carousel-item img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      filter: brightness(70%); }
+    /* line 180, static/css/style.scss */
+    header .carousel .carousel-item .carousel-caption {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      color: #ecf0f1; }
+      /* line 187, static/css/style.scss */
+      header .carousel .carousel-item .carousel-caption h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 1rem; }
+      /* line 193, static/css/style.scss */
+      header .carousel .carousel-item .carousel-caption p {
+        font-size: 1.25rem;
+        margin-bottom: 2rem; }
+      /* line 198, static/css/style.scss */
+      header .carousel .carousel-item .carousel-caption .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem; }
+  /* line 205, static/css/style.scss */
+  header .carousel .carousel-indicators button {
+    background-color: #ecf0f1;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 4px;
+    opacity: 0.7; }
+    /* line 213, static/css/style.scss */
+    header .carousel .carousel-indicators button.active {
+      background-color: #3498db;
+      opacity: 1; }
+  /* line 219, static/css/style.scss */
+  header .carousel .carousel-control-prev-icon,
+  header .carousel .carousel-control-next-icon {
+    filter: invert(1); }
+
+/* line 227, static/css/style.scss */
+#services {
+  background-color: #ffffff; }
+  /* line 230, static/css/style.scss */
+  #services h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 2rem; }
+  /* line 236, static/css/style.scss */
+  #services .service-item {
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out; }
+    /* line 241, static/css/style.scss */
+    #services .service-item:hover {
+      transform: translateY(-5px); }
+    /* line 245, static/css/style.scss */
+    #services .service-item .service-icon {
+      color: #3498db;
+      font-size: 2rem;
+      margin-bottom: 1rem; }
+    /* line 251, static/css/style.scss */
+    #services .service-item h5 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #2c3e50; }
+    /* line 257, static/css/style.scss */
+    #services .service-item p {
+      color: #7f8c8d;
+      font-size: 0.875rem; }
+
+/* line 265, static/css/style.scss */
+#portfolio {
+  background-color: #ecf0f1; }
+  /* line 268, static/css/style.scss */
+  #portfolio h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 2rem; }
+  /* line 274, static/css/style.scss */
+  #portfolio .portfolio-img {
+    margin-bottom: 2rem; }
+    /* line 277, static/css/style.scss */
+    #portfolio .portfolio-img img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #8aa4be;
+      border-radius: 4px;
+      transition: all 0.3s ease-in-out; }
+      /* line 284, static/css/style.scss */
+      #portfolio .portfolio-img img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+/* line 295, static/css/style.scss */
+#contact {
+  background-color: #ffffff;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+  /* line 303, static/css/style.scss */
+  #contact h2 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    animation: fadeInUp 0.5s ease forwards;
+    animation-delay: 0s; }
+  /* line 312, static/css/style.scss */
+  #contact p {
+    color: #7f8c8d;
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+    max-width: 600px;
+    line-height: 1.6;
+    animation: fadeInUp 0.7s ease forwards;
+    animation-delay: 0s; }
+  /* line 321, static/css/style.scss */
+  #contact .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 4rem; }
+    /* line 328, static/css/style.scss */
+    #contact .contact-info p {
+      font-size: 16px;
+      color: #2c3e50;
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      transition: color 0.3s ease; }
+      /* line 336, static/css/style.scss */
+      #contact .contact-info p i {
+        color: #3498db;
+        margin-right: 0.75rem;
+        font-size: 1.25rem; }
+      /* line 342, static/css/style.scss */
+      #contact .contact-info p strong {
+        font-weight: 600; }
+      /* line 346, static/css/style.scss */
+      #contact .contact-info p:hover {
+        color: #3498db; }
+    /* line 351, static/css/style.scss */
+    #contact .contact-info .social-icons {
+      display: flex;
+      gap: 1rem; }
+      /* line 355, static/css/style.scss */
+      #contact .contact-info .social-icons a {
+        color: #2c3e50;
+        font-size: 1.75rem;
+        transition: color 0.3s ease, transform 0.3s ease; }
+        /* line 61, static/css/style.scss */
+        #contact .contact-info .social-icons a:focus {
+          outline: 2px dashed #3498db;
+          outline-offset: 4px; }
+        /* line 361, static/css/style.scss */
+        #contact .contact-info .social-icons a:hover, #contact .contact-info .social-icons a:focus {
+          color: #3498db;
+          transform: scale(1.1); }
+  @media (min-width: 768px) {
+    /* line 295, static/css/style.scss */
+    #contact {
+      flex-direction: row;
+      text-align: left;
+      justify-content: space-between; }
+      /* line 375, static/css/style.scss */
+      #contact h2,
+      #contact p {
+        text-align: left; }
+      /* line 380, static/css/style.scss */
+      #contact .contact-info {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 4rem; } }
+/* line 388, static/css/style.scss */
+#quoteForm {
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0s; }
+  /* line 399, static/css/style.scss */
+  #quoteForm:hover {
+    background-color: #233140;
+    transform: translateY(-5px); }
+  /* line 404, static/css/style.scss */
+  #quoteForm h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-align: center; }
+  /* line 412, static/css/style.scss */
+  #quoteForm form {
+    background-color: #3e5871;
+    padding: 4rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem; }
+    @media (min-width: 600px) {
+      /* line 412, static/css/style.scss */
+      #quoteForm form {
+        grid-template-columns: 1fr 1fr; } }
+    /* line 425, static/css/style.scss */
+    #quoteForm form .form-group {
+      display: flex;
+      flex-direction: column; }
+      /* line 429, static/css/style.scss */
+      #quoteForm form .form-group .form-label {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        display: block;
+        font-size: 0.875rem; }
+      /* line 436, static/css/style.scss */
+      #quoteForm form .form-group .form-control,
+      #quoteForm form .form-group .form-select {
+        border: 1px solid #ecf0f1;
+        border-radius: 4px;
+        padding: 0.75rem 1rem;
+        font-size: 16px;
+        background-color: #ffffff;
+        color: #2c3e50;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease; }
+        /* line 446, static/css/style.scss */
+        #quoteForm form .form-group .form-control:focus,
+        #quoteForm form .form-group .form-select:focus {
+          border-color: #3498db;
+          box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
+          outline: none; }
+        /* line 452, static/css/style.scss */
+        #quoteForm form .form-group .form-control::placeholder,
+        #quoteForm form .form-group .form-select::placeholder {
+          color: #7f8c8d; }
+      /* line 457, static/css/style.scss */
+      #quoteForm form .form-group .invalid-feedback {
+        color: #507192;
+        font-size: 0.75rem;
+        margin-top: 0.25rem; }
+    /* line 464, static/css/style.scss */
+    #quoteForm form .full-width {
+      grid-column: 1 / -1; }
+    /* line 468, static/css/style.scss */
+    #quoteForm form .btn-primary {
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1.25rem;
+      border: none;
+      border-radius: 4px;
+      background-color: #3498db;
+      color: #ffffff;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease; }
+      /* line 479, static/css/style.scss */
+      #quoteForm form .btn-primary:hover, #quoteForm form .btn-primary:focus {
+        background-color: #217dbb;
+        transform: translateY(-2px); }
+      /* line 485, static/css/style.scss */
+      #quoteForm form .btn-primary:active {
+        background-color: #1d6fa5;
+        transform: translateY(0); }
+      /* line 490, static/css/style.scss */
+      #quoteForm form .btn-primary:disabled {
+        background-color: #8bc4ea;
+        cursor: not-allowed; }
+
+/* line 500, static/css/style.scss */
+.footer {
+  background-color: #ecf0f1;
+  padding: 2rem 0;
+  text-align: center; }
+  /* line 505, static/css/style.scss */
+  .footer p {
+    margin: 0;
+    color: #7f8c8d;
+    font-size: 0.875rem; }
+
+@media (min-width: 768px) {
+  /* line 515, static/css/style.scss */
+  header .carousel-caption h1 {
+    font-size: 4rem; }
+  /* line 519, static/css/style.scss */
+  header .carousel-caption p {
+    font-size: 1.5rem; }
+  /* line 524, static/css/style.scss */
+  #services .service-item {
+    padding: 2rem; }
+  /* line 528, static/css/style.scss */
+  #portfolio .portfolio-img {
+    margin-bottom: 3rem; } }
+
+@media (min-width: 992px) {
+  /* line 534, static/css/style.scss */
+  .navbar .navbar-nav .nav-item {
+    margin-right: 2rem; } }

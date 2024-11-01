@@ -1,0 +1,503 @@
+/* line 49, static/css/style.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+  background-color: #FFFFFF;
+  overflow-x: hidden; }
+
+/* line 59, static/css/style.scss */
+.text-primary {
+  color: #000000 !important; }
+
+/* line 63, static/css/style.scss */
+.bg-primary {
+  background-color: #000000 !important; }
+
+/* line 67, static/css/style.scss */
+.btn-primary {
+  background-color: #000000;
+  border: none;
+  transition: all 0.3s ease-in-out; }
+  /* line 72, static/css/style.scss */
+  .btn-primary:hover {
+    background-color: black; }
+
+/* line 77, static/css/style.scss */
+a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; }
+  /* line 82, static/css/style.scss */
+  a:hover {
+    color: #FF6F20;
+    text-decoration: none; }
+
+/* line 89, static/css/style.scss */
+.navbar {
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0; }
+  /* line 94, static/css/style.scss */
+  .navbar .navbar-brand {
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.5rem; }
+    /* line 99, static/css/style.scss */
+    .navbar .navbar-brand:hover {
+      color: #FF6F20; }
+    /* line 103, static/css/style.scss */
+    .navbar .navbar-brand i {
+      margin-right: 0.5rem; }
+  /* line 108, static/css/style.scss */
+  .navbar .nav-link {
+    color: #333333;
+    font-weight: 500;
+    margin-right: 1rem; }
+    /* line 113, static/css/style.scss */
+    .navbar .nav-link.active {
+      color: #FF6F20; }
+    /* line 117, static/css/style.scss */
+    .navbar .nav-link:hover {
+      color: #FF6F20; }
+    /* line 121, static/css/style.scss */
+    .navbar .nav-link.btn {
+      position: relative;
+      padding: 0.75rem 1.5rem;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1rem;
+      background: linear-gradient(135deg, #1a1a1a, black);
+      color: #fff;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.1s ease;
+      cursor: pointer; }
+      /* line 135, static/css/style.scss */
+      .navbar .nav-link.btn:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: inherit;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent);
+        opacity: 0.6;
+        animation: glow-pulse 3s ease-in-out infinite;
+        z-index: -1; }
+      /* line 150, static/css/style.scss */
+      .navbar .nav-link.btn:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -150%;
+        width: 300%;
+        height: 100%;
+        background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+        transform: skewX(-25deg);
+        animation: endless-shimmer 3s linear infinite; }
+      /* line 163, static/css/style.scss */
+      .navbar .nav-link.btn .sparkle {
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        opacity: 0;
+        animation: sparkle-animation 4s infinite ease-in-out; }
+        /* line 173, static/css/style.scss */
+        .navbar .nav-link.btn .sparkle:nth-child(1) {
+          top: 10%;
+          left: 30%;
+          animation-delay: 0.3s; }
+        /* line 174, static/css/style.scss */
+        .navbar .nav-link.btn .sparkle:nth-child(2) {
+          top: 70%;
+          left: 20%;
+          animation-delay: 0.8s; }
+        /* line 175, static/css/style.scss */
+        .navbar .nav-link.btn .sparkle:nth-child(3) {
+          top: 50%;
+          left: 75%;
+          animation-delay: 1.2s; }
+        /* line 176, static/css/style.scss */
+        .navbar .nav-link.btn .sparkle:nth-child(4) {
+          top: 30%;
+          left: 60%;
+          animation-delay: 1.7s; }
+        /* line 177, static/css/style.scss */
+        .navbar .nav-link.btn .sparkle:nth-child(5) {
+          top: 80%;
+          left: 40%;
+          animation-delay: 2.1s; }
+
+@keyframes glow-pulse {
+  0%, 100% {
+    opacity: 0.5; }
+  50% {
+    opacity: 1; } }
+
+@keyframes endless-shimmer {
+  0% {
+    transform: translateX(-150%) skewX(-25deg); }
+  100% {
+    transform: translateX(150%) skewX(-25deg); } }
+
+@keyframes sparkle-animation {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0.5); }
+  50% {
+    opacity: 1;
+    transform: scale(1.5); } }
+  /* line 200, static/css/style.scss */
+  .navbar .navbar-toggler {
+    border: none; }
+    /* line 203, static/css/style.scss */
+    .navbar .navbar-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(44,62,80, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E"); }
+
+/* line 211, static/css/style.scss */
+header .carousel {
+  height: 100vh; }
+  /* line 214, static/css/style.scss */
+  header .carousel .carousel-item {
+    height: 100vh;
+    position: relative; }
+    /* line 218, static/css/style.scss */
+    header .carousel .carousel-item img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      filter: brightness(70%); }
+    /* line 226, static/css/style.scss */
+    header .carousel .carousel-item .carousel-caption .caption-background {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 10px;
+      display: inline-block;
+      max-width: 80%;
+      text-align: center; }
+      /* line 234, static/css/style.scss */
+      header .carousel .carousel-item .carousel-caption .caption-background h1, header .carousel .carousel-item .carousel-caption .caption-background p, header .carousel .carousel-item .carousel-caption .caption-background .btn {
+        color: white;
+        margin-bottom: 1rem; }
+      /* line 239, static/css/style.scss */
+      header .carousel .carousel-item .carousel-caption .caption-background h1 {
+        font-size: 3rem;
+        font-weight: bold; }
+      /* line 244, static/css/style.scss */
+      header .carousel .carousel-item .carousel-caption .caption-background p {
+        font-size: 1.25rem; }
+      /* line 248, static/css/style.scss */
+      header .carousel .carousel-item .carousel-caption .caption-background .btn {
+        position: relative;
+        font-size: 1.1rem;
+        padding: 0.75rem 2rem;
+        background: linear-gradient(135deg, #ff9053, #ec5400);
+        color: #fff;
+        border: none;
+        border-radius: 25px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        animation: float 6s ease-in-out infinite; }
+        /* line 263, static/css/style.scss */
+        header .carousel .carousel-item .carousel-caption .caption-background .btn:before {
+          content: '';
+          position: absolute;
+          top: -4px;
+          left: -4px;
+          right: -4px;
+          bottom: -4px;
+          border-radius: inherit;
+          background: linear-gradient(45deg, #FF6F20, #ffb186, #ec5400, #FF6F20);
+          background-size: 200%;
+          z-index: -1;
+          animation: rotate-border 6s linear infinite; }
+        /* line 278, static/css/style.scss */
+        header .carousel .carousel-item .carousel-caption .caption-background .btn:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 200%;
+          height: 100%;
+          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+          animation: shimmer 3s ease-in-out infinite;
+          transform: skewX(-20deg); }
+        /* line 291, static/css/style.scss */
+        header .carousel .carousel-item .carousel-caption .caption-background .btn::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-radius: inherit;
+          background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent);
+          opacity: 0.4;
+          animation: glow-pulse 4s ease-in-out infinite;
+          z-index: -2; }
+        /* line 305, static/css/style.scss */
+        header .carousel .carousel-item .carousel-caption .caption-background .btn:hover {
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, 0.5);
+          transform: scale(1.05); }
+
+@keyframes float {
+  0%, 100% {
+    transform: rotateX(0deg) rotateY(0deg); }
+  50% {
+    transform: rotateX(4deg) rotateY(-4deg); } }
+
+@keyframes rotate-border {
+  0% {
+    background-position: 0% 50%; }
+  100% {
+    background-position: 100% 50%; } }
+
+@keyframes shimmer {
+  0% {
+    left: -100%; }
+  100% {
+    left: 100%; } }
+
+@keyframes glow-pulse {
+  0%, 100% {
+    opacity: 0.4; }
+  50% {
+    opacity: 0.8; } }
+  /* line 337, static/css/style.scss */
+  header .carousel .carousel-indicators button {
+    background-color: #F5F5F5;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 4px;
+    opacity: 0.7; }
+    /* line 345, static/css/style.scss */
+    header .carousel .carousel-indicators button.active {
+      background-color: #FF6F20;
+      opacity: 1; }
+  /* line 351, static/css/style.scss */
+  header .carousel .carousel-control-prev-icon,
+  header .carousel .carousel-control-next-icon {
+    filter: invert(1); }
+
+/* line 359, static/css/style.scss */
+#services {
+  background-color: #FFFFFF; }
+  /* line 362, static/css/style.scss */
+  #services h2 {
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 2rem; }
+  /* line 368, static/css/style.scss */
+  #services .service-item {
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out; }
+    /* line 373, static/css/style.scss */
+    #services .service-item:hover {
+      transform: translateY(-5px); }
+    /* line 377, static/css/style.scss */
+    #services .service-item .service-icon {
+      color: #FF6F20;
+      font-size: 2rem;
+      margin-bottom: 1rem; }
+    /* line 383, static/css/style.scss */
+    #services .service-item h5 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #000000; }
+    /* line 389, static/css/style.scss */
+    #services .service-item p {
+      color: #BDBDBD;
+      font-size: 0.875rem; }
+
+/* line 397, static/css/style.scss */
+#portfolio {
+  background-color: #F5F5F5; }
+  /* line 400, static/css/style.scss */
+  #portfolio h2 {
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 2rem; }
+  /* line 406, static/css/style.scss */
+  #portfolio .portfolio-img {
+    margin-bottom: 2rem; }
+    /* line 409, static/css/style.scss */
+    #portfolio .portfolio-img img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #666666;
+      border-radius: 4px;
+      transition: all 0.3s ease-in-out; }
+      /* line 416, static/css/style.scss */
+      #portfolio .portfolio-img img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+/* line 425, static/css/style.scss */
+#contact {
+  background-color: #FFFFFF; }
+  /* line 428, static/css/style.scss */
+  #contact h2 {
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+  /* line 434, static/css/style.scss */
+  #contact p {
+    color: #BDBDBD;
+    font-size: 16px;
+    margin-bottom: 3rem; }
+  /* line 441, static/css/style.scss */
+  #contact .contact-info p {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 1rem; }
+    /* line 446, static/css/style.scss */
+    #contact .contact-info p i {
+      color: #FF6F20;
+      margin-right: 0.5rem; }
+    /* line 451, static/css/style.scss */
+    #contact .contact-info p strong {
+      font-weight: 600; }
+  /* line 457, static/css/style.scss */
+  #contact .contact-info .social-icons a {
+    color: #333333;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s ease-in-out; }
+    /* line 463, static/css/style.scss */
+    #contact .contact-info .social-icons a:hover {
+      color: #FF6F20; }
+
+/* line 472, static/css/style.scss */
+#quoteForm {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 4rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+  /* line 479, static/css/style.scss */
+  #quoteForm h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    text-align: center; }
+  /* line 485, static/css/style.scss */
+  #quoteForm form {
+    background-color: #1a1a1a;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; }
+    /* line 492, static/css/style.scss */
+    #quoteForm form:hover {
+      transform: translateY(-2px); }
+    /* line 496, static/css/style.scss */
+    #quoteForm form .form-group {
+      margin-bottom: 2rem; }
+      /* line 499, static/css/style.scss */
+      #quoteForm form .form-group .form-label {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        display: block;
+        font-size: 1rem; }
+      /* line 506, static/css/style.scss */
+      #quoteForm form .form-group .form-control,
+      #quoteForm form .form-group .form-select {
+        width: 100%;
+        border: 1px solid #F5F5F5;
+        border-radius: 4px;
+        padding: 0.75rem;
+        font-size: 16px;
+        background-color: #FFFFFF;
+        color: #333333;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease; }
+        /* line 517, static/css/style.scss */
+        #quoteForm form .form-group .form-control:focus,
+        #quoteForm form .form-group .form-select:focus {
+          border-color: #FF6F20;
+          box-shadow: 0 0 0 3px rgba(255, 111, 32, 0.2);
+          outline: none; }
+        /* line 523, static/css/style.scss */
+        #quoteForm form .form-group .form-control::placeholder,
+        #quoteForm form .form-group .form-select::placeholder {
+          color: #666666; }
+      /* line 528, static/css/style.scss */
+      #quoteForm form .form-group .invalid-feedback {
+        color: #ffb186;
+        margin-top: 0.25rem;
+        font-size: 0.875rem; }
+    /* line 535, static/css/style.scss */
+    #quoteForm form .btn-primary {
+      display: inline-block;
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+      text-align: center;
+      color: #FFFFFF;
+      background-color: #000000;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease; }
+      /* line 549, static/css/style.scss */
+      #quoteForm form .btn-primary:hover {
+        background-color: black;
+        transform: translateY(-2px); }
+      /* line 554, static/css/style.scss */
+      #quoteForm form .btn-primary:active {
+        transform: translateY(0); }
+      /* line 558, static/css/style.scss */
+      #quoteForm form .btn-primary:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(255, 111, 32, 0.2); }
+  @media (max-width: 600px) {
+    /* line 472, static/css/style.scss */
+    #quoteForm {
+      padding: 2rem; }
+      /* line 568, static/css/style.scss */
+      #quoteForm h2 {
+        font-size: 1.75rem; }
+      /* line 572, static/css/style.scss */
+      #quoteForm form {
+        padding: 2rem; }
+      /* line 576, static/css/style.scss */
+      #quoteForm .btn-primary {
+        font-size: 1.1rem;
+        padding: 0.65rem; } }
+/* line 584, static/css/style.scss */
+.footer {
+  background-color: #F5F5F5;
+  padding: 2rem 0;
+  text-align: center; }
+  /* line 589, static/css/style.scss */
+  .footer p {
+    margin: 0;
+    color: #BDBDBD;
+    font-size: 0.875rem; }
+
+@media (min-width: 768px) {
+  /* line 599, static/css/style.scss */
+  header .carousel-caption h1 {
+    font-size: 4rem; }
+  /* line 603, static/css/style.scss */
+  header .carousel-caption p {
+    font-size: 1.5rem; }
+  /* line 608, static/css/style.scss */
+  #services .service-item {
+    padding: 2rem; }
+  /* line 612, static/css/style.scss */
+  #portfolio .portfolio-img {
+    margin-bottom: 3rem; } }
+
+@media (min-width: 992px) {
+  /* line 618, static/css/style.scss */
+  .navbar .navbar-nav .nav-item {
+    margin-right: 2rem; } }

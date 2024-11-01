@@ -1,0 +1,384 @@
+/* line 49, static/css/style.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333333;
+  background-color: #FFFFFF;
+  overflow-x: hidden; }
+
+/* line 59, static/css/style.scss */
+.text-primary {
+  color: #000000 !important; }
+
+/* line 63, static/css/style.scss */
+.bg-primary {
+  background-color: #000000 !important; }
+
+/* line 67, static/css/style.scss */
+.btn-primary {
+  background-color: #000000;
+  border: none;
+  transition: all 0.3s ease-in-out; }
+  /* line 72, static/css/style.scss */
+  .btn-primary:hover {
+    background-color: black; }
+
+/* line 77, static/css/style.scss */
+a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; }
+  /* line 82, static/css/style.scss */
+  a:hover {
+    color: #FF6F20;
+    text-decoration: none; }
+
+/* line 89, static/css/style.scss */
+.navbar {
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0; }
+  /* line 94, static/css/style.scss */
+  .navbar .navbar-brand {
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.5rem; }
+    /* line 99, static/css/style.scss */
+    .navbar .navbar-brand:hover {
+      color: #FF6F20; }
+    /* line 103, static/css/style.scss */
+    .navbar .navbar-brand i {
+      margin-right: 0.5rem; }
+  /* line 108, static/css/style.scss */
+  .navbar .nav-link {
+    color: #333333;
+    font-weight: 500;
+    margin-right: 1rem; }
+    /* line 113, static/css/style.scss */
+    .navbar .nav-link.active {
+      color: #FF6F20; }
+    /* line 117, static/css/style.scss */
+    .navbar .nav-link:hover {
+      color: #FF6F20; }
+    /* line 121, static/css/style.scss */
+    .navbar .nav-link.btn {
+      position: relative;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1rem;
+      background: linear-gradient(135deg, #000000, black);
+      color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      transition: all 0.3s ease, transform 0.1s ease; }
+      /* line 133, static/css/style.scss */
+      .navbar .nav-link.btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); }
+      /* line 138, static/css/style.scss */
+      .navbar .nav-link.btn:active {
+        transform: translateY(0);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+      /* line 144, static/css/style.scss */
+      .navbar .nav-link.btn:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -75%;
+        width: 150%;
+        height: 100%;
+        background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+        opacity: 0.5;
+        transform: skewX(-25deg);
+        animation: shimmer 2.5s infinite; }
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-150%) skewX(-25deg); }
+  50% {
+    transform: translateX(150%) skewX(-25deg); }
+  100% {
+    transform: translateX(-150%) skewX(-25deg); } }
+  /* line 166, static/css/style.scss */
+  .navbar .navbar-toggler {
+    border: none; }
+    /* line 169, static/css/style.scss */
+    .navbar .navbar-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(44,62,80, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E"); }
+
+/* line 177, static/css/style.scss */
+header .carousel {
+  height: 100vh; }
+  /* line 180, static/css/style.scss */
+  header .carousel .carousel-item {
+    height: 100vh;
+    position: relative; }
+    /* line 184, static/css/style.scss */
+    header .carousel .carousel-item img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+      filter: brightness(70%); }
+    /* line 192, static/css/style.scss */
+    header .carousel .carousel-item .carousel-caption .caption-background {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 10px;
+      display: inline-block;
+      max-width: 80%;
+      text-align: center; }
+      /* line 200, static/css/style.scss */
+      header .carousel .carousel-item .carousel-caption .caption-background h1, header .carousel .carousel-item .carousel-caption .caption-background p, header .carousel .carousel-item .carousel-caption .caption-background .btn {
+        color: white;
+        margin-bottom: 1rem; }
+      /* line 205, static/css/style.scss */
+      header .carousel .carousel-item .carousel-caption .caption-background h1 {
+        font-size: 3rem;
+        font-weight: bold; }
+      /* line 210, static/css/style.scss */
+      header .carousel .carousel-item .carousel-caption .caption-background p {
+        font-size: 1.25rem; }
+      /* line 214, static/css/style.scss */
+      header .carousel .carousel-item .carousel-caption .caption-background .btn {
+        font-size: 1.1rem;
+        padding: 0.75rem 2rem;
+        background-color: #FF6F20;
+        border: none;
+        border-radius: 25px;
+        transition: background-color 0.3s ease; }
+        /* line 222, static/css/style.scss */
+        header .carousel .carousel-item .carousel-caption .caption-background .btn:hover {
+          background-color: #ec5400; }
+  /* line 230, static/css/style.scss */
+  header .carousel .carousel-indicators button {
+    background-color: #F5F5F5;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 4px;
+    opacity: 0.7; }
+    /* line 238, static/css/style.scss */
+    header .carousel .carousel-indicators button.active {
+      background-color: #FF6F20;
+      opacity: 1; }
+  /* line 244, static/css/style.scss */
+  header .carousel .carousel-control-prev-icon,
+  header .carousel .carousel-control-next-icon {
+    filter: invert(1); }
+
+/* line 252, static/css/style.scss */
+#services {
+  background-color: #FFFFFF; }
+  /* line 255, static/css/style.scss */
+  #services h2 {
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 2rem; }
+  /* line 261, static/css/style.scss */
+  #services .service-item {
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out; }
+    /* line 266, static/css/style.scss */
+    #services .service-item:hover {
+      transform: translateY(-5px); }
+    /* line 270, static/css/style.scss */
+    #services .service-item .service-icon {
+      color: #FF6F20;
+      font-size: 2rem;
+      margin-bottom: 1rem; }
+    /* line 276, static/css/style.scss */
+    #services .service-item h5 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: #000000; }
+    /* line 282, static/css/style.scss */
+    #services .service-item p {
+      color: #BDBDBD;
+      font-size: 0.875rem; }
+
+/* line 290, static/css/style.scss */
+#portfolio {
+  background-color: #F5F5F5; }
+  /* line 293, static/css/style.scss */
+  #portfolio h2 {
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 2rem; }
+  /* line 299, static/css/style.scss */
+  #portfolio .portfolio-img {
+    margin-bottom: 2rem; }
+    /* line 302, static/css/style.scss */
+    #portfolio .portfolio-img img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #666666;
+      border-radius: 4px;
+      transition: all 0.3s ease-in-out; }
+      /* line 309, static/css/style.scss */
+      #portfolio .portfolio-img img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+
+/* line 318, static/css/style.scss */
+#contact {
+  background-color: #FFFFFF; }
+  /* line 321, static/css/style.scss */
+  #contact h2 {
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+  /* line 327, static/css/style.scss */
+  #contact p {
+    color: #BDBDBD;
+    font-size: 16px;
+    margin-bottom: 3rem; }
+  /* line 334, static/css/style.scss */
+  #contact .contact-info p {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 1rem; }
+    /* line 339, static/css/style.scss */
+    #contact .contact-info p i {
+      color: #FF6F20;
+      margin-right: 0.5rem; }
+    /* line 344, static/css/style.scss */
+    #contact .contact-info p strong {
+      font-weight: 600; }
+  /* line 350, static/css/style.scss */
+  #contact .contact-info .social-icons a {
+    color: #333333;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s ease-in-out; }
+    /* line 356, static/css/style.scss */
+    #contact .contact-info .social-icons a:hover {
+      color: #FF6F20; }
+
+/* line 365, static/css/style.scss */
+#quoteForm {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 4rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+  /* line 372, static/css/style.scss */
+  #quoteForm h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    text-align: center; }
+  /* line 378, static/css/style.scss */
+  #quoteForm form {
+    background-color: #1a1a1a;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; }
+    /* line 385, static/css/style.scss */
+    #quoteForm form:hover {
+      transform: translateY(-2px); }
+    /* line 389, static/css/style.scss */
+    #quoteForm form .form-group {
+      margin-bottom: 2rem; }
+      /* line 392, static/css/style.scss */
+      #quoteForm form .form-group .form-label {
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        display: block;
+        font-size: 1rem; }
+      /* line 399, static/css/style.scss */
+      #quoteForm form .form-group .form-control,
+      #quoteForm form .form-group .form-select {
+        width: 100%;
+        border: 1px solid #F5F5F5;
+        border-radius: 4px;
+        padding: 0.75rem;
+        font-size: 16px;
+        background-color: #FFFFFF;
+        color: #333333;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease; }
+        /* line 410, static/css/style.scss */
+        #quoteForm form .form-group .form-control:focus,
+        #quoteForm form .form-group .form-select:focus {
+          border-color: #FF6F20;
+          box-shadow: 0 0 0 3px rgba(255, 111, 32, 0.2);
+          outline: none; }
+        /* line 416, static/css/style.scss */
+        #quoteForm form .form-group .form-control::placeholder,
+        #quoteForm form .form-group .form-select::placeholder {
+          color: #666666; }
+      /* line 421, static/css/style.scss */
+      #quoteForm form .form-group .invalid-feedback {
+        color: #ffb186;
+        margin-top: 0.25rem;
+        font-size: 0.875rem; }
+    /* line 428, static/css/style.scss */
+    #quoteForm form .btn-primary {
+      display: inline-block;
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+      text-align: center;
+      color: #FFFFFF;
+      background-color: #000000;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease; }
+      /* line 442, static/css/style.scss */
+      #quoteForm form .btn-primary:hover {
+        background-color: black;
+        transform: translateY(-2px); }
+      /* line 447, static/css/style.scss */
+      #quoteForm form .btn-primary:active {
+        transform: translateY(0); }
+      /* line 451, static/css/style.scss */
+      #quoteForm form .btn-primary:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(255, 111, 32, 0.2); }
+  @media (max-width: 600px) {
+    /* line 365, static/css/style.scss */
+    #quoteForm {
+      padding: 2rem; }
+      /* line 461, static/css/style.scss */
+      #quoteForm h2 {
+        font-size: 1.75rem; }
+      /* line 465, static/css/style.scss */
+      #quoteForm form {
+        padding: 2rem; }
+      /* line 469, static/css/style.scss */
+      #quoteForm .btn-primary {
+        font-size: 1.1rem;
+        padding: 0.65rem; } }
+/* line 477, static/css/style.scss */
+.footer {
+  background-color: #F5F5F5;
+  padding: 2rem 0;
+  text-align: center; }
+  /* line 482, static/css/style.scss */
+  .footer p {
+    margin: 0;
+    color: #BDBDBD;
+    font-size: 0.875rem; }
+
+@media (min-width: 768px) {
+  /* line 492, static/css/style.scss */
+  header .carousel-caption h1 {
+    font-size: 4rem; }
+  /* line 496, static/css/style.scss */
+  header .carousel-caption p {
+    font-size: 1.5rem; }
+  /* line 501, static/css/style.scss */
+  #services .service-item {
+    padding: 2rem; }
+  /* line 505, static/css/style.scss */
+  #portfolio .portfolio-img {
+    margin-bottom: 3rem; } }
+
+@media (min-width: 992px) {
+  /* line 511, static/css/style.scss */
+  .navbar .navbar-nav .nav-item {
+    margin-right: 2rem; } }

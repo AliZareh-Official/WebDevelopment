@@ -1,0 +1,298 @@
+<!-- quotes/templates/quotes/index.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Web Development Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    {% load compress %}
+    {% compress css %}
+        <link type="text/x-scss" href="{% static 'css/style.scss' %}" rel="stylesheet" media="screen">
+    {% endcompress %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'logo.png' %}" alt="My Web Services Logo" style="height: 40px; width: auto; margin-right: 8px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#services"><i class="fas fa-cogs me-1"></i> Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio"><i class="fas fa-briefcase me-1"></i> Portfolio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link btn btn-primary text-white ms-2" href="#quoteForm"><i class="fas fa-file-invoice me-1"></i> Get a Quote</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+{% block content %}
+    <!-- Carousel -->
+    <header>
+        <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="{% static 'hero1.jpg' %}" class="d-block w-100" alt="Portfolio Services">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="caption-background">
+                            <h1>Professional Portfolio Services</h1>
+                            <p>Showcase your work with a beautifully crafted portfolio.</p>
+                            <a href="#quoteForm" class="btn btn-primary btn-lg">Get a Quote</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="{% static 'hero2.jpg' %}" class="d-block w-100" alt="E-commerce Solutions">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="caption-background">
+                            <h1>Scalable E-commerce Solutions</h1>
+                            <p>Launch your online store with a seamless shopping experience.</p>
+                            <a href="#quoteForm" class="btn btn-primary btn-lg">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="{% static 'hero3.jpg' %}" class="d-block w-100" alt="Corporate Websites">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="caption-background">
+                            <h1>Corporate Websites</h1>
+                            <p>Establish a strong online presence with a professional corporate site.</p>
+                            <a href="#quoteForm" class="btn btn-primary btn-lg">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+                <i class="fas fa-arrow-left fa-2x" aria-hidden="true"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+                <i class="fas fa-arrow-right fa-2x" aria-hidden="true"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+<section id="portfolio" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Portfolio</h2>
+        <!-- First Row -->
+        <div class="row">
+            <div class="col-md-4 portfolio-img">
+                <img src="{% static 'proj1.png' %}" alt="Project 1" loading="lazy">
+            </div>
+            <div class="col-md-4 portfolio-img">
+                <img src="{% static 'proj2.png' %}" alt="Project 2" loading="lazy">
+            </div>
+            <div class="col-md-4 portfolio-img">
+                <img src="{% static 'proj3.png' %}" alt="Project 3" loading="lazy">
+            </div>
+        </div>
+        <!-- Second Row -->
+        <div class="row mt-4">
+            <div class="col-md-4 portfolio-img">
+                <img src="{% static 'proj4.png' %}" alt="Project 4" loading="lazy">
+            </div>
+            <div class="col-md-4 portfolio-img">
+                <img src="{% static 'proj5.png' %}" alt="Project 5" loading="lazy">
+            </div>
+            <div class="col-md-4 portfolio-img">
+                <img src="{% static 'proj6.png' %}" alt="Project 6" loading="lazy">
+            </div>
+        </div>
+        <!-- Third Row -->
+        <div class="row mt-4">
+            <div class="col-md-4 portfolio-img">
+                <img src="{% static 'proj7.jpg' %}" alt="Project 7" loading="lazy">
+            </div>
+            <div class="col-md-4 portfolio-img">
+                <img src="{% static 'proj8.jpg' %}" alt="Project 8" loading="lazy">
+            </div>
+            <div class="col-md-4 portfolio-img">
+                <img src="{% static 'proj9.jpg' %}" alt="Project 9" loading="lazy">
+            </div>
+        </div>
+        <!-- Fourth Row -->
+        <div class="row mt-4">
+            <div class="col-md-4 portfolio-img">
+                <img src="{% static 'proj10.jpg' %}" alt="Project 10" loading="lazy">
+            </div>
+            <div class="col-md-4 portfolio-img">
+                <img src="{% static 'proj11.jpg' %}" alt="Project 11" loading="lazy">
+            </div>
+            <div class="col-md-4 portfolio-img">
+                <img src="{% static 'proj12.jpg' %}" alt="Project 12" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<!-- Services Section -->
+<section id="services" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row justify-content-center">
+            <!-- Portfolio Service -->
+            <div class="col-md-4 service-item">
+                <div class="service-number" data-target="378" aria-label="150 Portfolio Websites">0</div>
+                <i class="fas fa-briefcase service-icon fa-lg me-1" aria-hidden="true"></i>
+                <h5>Portfolio Websites</h5>
+                <p>We create visually stunning portfolios to showcase your work and skills.</p>
+            </div>
+            <!-- Corporate Service -->
+            <div class="col-md-4 service-item">
+                <div class="service-number" data-target="142" aria-label="120 Corporate Websites">0</div>
+                <i class="fas fa-building service-icon fa-lg me-1" aria-hidden="true"></i>
+                <h5>Corporate Websites</h5>
+                <p>Build your brand’s online presence with our customized corporate website solutions.</p>
+            </div>
+            <!-- E-commerce Service -->
+            <div class="col-md-4 service-item">
+                <div class="service-number" data-target="79" aria-label="200 E-commerce Solutions">0</div>
+                <i class="fas fa-shopping-cart service-icon fa-lg me-1" aria-hidden="true"></i>
+                <h5>E-commerce Solutions</h5>
+                <p>Expand your business online with our comprehensive e-commerce services.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Quote Form Section -->
+<!-- Quote Form Section -->
+<section id="quoteForm" class="py-5 bg-white text-white">
+    <div class="container">
+        <h2 class="text-center mb-4">Request a Quote</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form method="post" class="needs-validation" novalidate>
+                    {% csrf_token %}
+                    {% load widget_tweaks %}
+
+                    <!-- Name Field -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="id_name" class="form-label"><i class="fas fa-user me-1"></i>Name</label>
+                            {{ form.name|add_class:"form-control" }}
+                            <div class="invalid-feedback">
+                                Please enter your name.
+                            </div>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="col-md-6">
+                            <label for="id_email" class="form-label"><i class="fas fa-envelope me-1"></i>Email</label>
+                            {{ form.email|add_class:"form-control" }}
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phone and Company Fields -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="id_phone" class="form-label"><i class="fas fa-phone me-1"></i>Phone</label>
+                            {{ form.phone|add_class:"form-control" }}
+                            <div class="invalid-feedback">
+                                Please enter your phone number.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="id_company_name" class="form-label"><i class="fas fa-building me-1"></i>Company Name</label>
+                            {{ form.company_name|add_class:"form-control" }}
+                            <div class="invalid-feedback">
+                                Please enter your company name.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Services Needed Field -->
+                    <div class="mb-3">
+                        <label for="id_services_needed" class="form-label"><i class="fas fa-concierge-bell me-1"></i>Services Needed</label>
+                        {{ form.services_needed|add_class:"form-select" }}
+                        <div class="invalid-feedback">
+                            Please select the services you need.
+                        </div>
+                    </div>
+
+                    <!-- Project Description Field -->
+                    <div class="mb-3">
+                        <label for="id_project_description" class="form-label"><i class="fas fa-project-diagram me-1"></i>Project Description</label>
+                        {{ form.project_description|add_class:"form-control" }}
+                        <div class="invalid-feedback">
+                            Please enter your project description.
+                        </div>
+                    </div>
+
+                    <!-- Budget and Timeline Fields -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="id_budget" class="form-label"><i class="fas fa-dollar-sign me-1"></i>Budget</label>
+                            {{ form.budget|add_class:"form-control" }}
+                            <div class="invalid-feedback">
+                                Please enter your budget.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="id_timeline" class="form-label"><i class="fas fa-calendar-alt me-1"></i>Timeline</label>
+                            {{ form.timeline|add_class:"form-control" }}
+                            <div class="invalid-feedback">
+                                Please enter your timeline.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary btn-lg">Submit Request</button>
+
+                    <!-- Divider -->
+                    <hr class="my-4">
+
+                    <!-- WhatsApp Contact Option -->
+                    <div class="text-center">
+                        <p class="mb-2">Or</p>
+                        <a href="https://wa.me/+905342449122?text=Hello%2C%20I%20would%20like%20to%20request%20a%20quote." 
+                           target="_blank" 
+                           class="btn btn-success btn-lg">
+                            <i class="fab fa-whatsapp me-2"></i>Contact via WhatsApp
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+<footer class="footer">
+    <div class="container">
+        <p class="mb-0">&copy; {{ now|date:"Y" }} Nuvexa. All rights reserved.</p>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

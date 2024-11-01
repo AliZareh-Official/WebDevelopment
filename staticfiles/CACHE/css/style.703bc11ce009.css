@@ -1,0 +1,482 @@
+/* style.scss */
+/* ===========================
+   1. Variable Definitions
+   =========================== */
+/* Color Palette using SCSS Map */
+/* Typography */
+/* Spacing */
+/* Breakpoints */
+/* Font Weights */
+/* Transition Settings */
+/* ===========================
+   2. Utility Functions
+   =========================== */
+/* Function to retrieve color from map */
+/* Function to retrieve font family from map */
+/* Function to retrieve font size from map */
+/* Function to retrieve spacing from map */
+/* ===========================
+   3. Mixins
+   =========================== */
+/* Responsive Breakpoint Mixin */
+/* Transition Mixin */
+/* Flex Centering Mixin */
+/* ===========================
+   4. Placeholders
+   =========================== */
+/* Button Placeholder */
+/* line 120, static/css/style.scss */
+#quoteForm form .btn-primary, header .carousel .carousel-item .carousel-caption .btn, .navbar .nav-link.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all all 0.3s ease-in-out; }
+  /* line 128, static/css/style.scss */
+  #quoteForm form .btn-primary:hover, header .carousel .carousel-item .carousel-caption .btn:hover, .navbar .nav-link.btn:hover {
+    background-color: #1a252f; }
+
+/* Card Placeholder */
+/* ===========================
+   5. Global Styles
+   =========================== */
+/* line 152, static/css/style.scss */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+/* line 160, static/css/style.scss */
+html {
+  font-size: 16px; }
+
+/* line 164, static/css/style.scss */
+body {
+  font-family: "'Helvetica Neue', Helvetica, Arial, sans-serif";
+  font-size: 16px;
+  color: #2c3e50;
+  background-color: #ffffff;
+  line-height: 1.5;
+  overflow-x: hidden; }
+
+/* Utility Classes */
+/* line 174, static/css/style.scss */
+.text-primary {
+  color: #2c3e50 !important; }
+
+/* line 175, static/css/style.scss */
+.bg-primary {
+  background-color: #2c3e50 !important; }
+
+/* line 176, static/css/style.scss */
+.text-accent {
+  color: #3498db !important; }
+
+/* line 177, static/css/style.scss */
+.bg-accent {
+  background-color: #3498db !important; }
+
+/* Links */
+/* line 180, static/css/style.scss */
+a {
+  color: #2c3e50;
+  text-decoration: none;
+  transition: color all 0.3s ease-in-out; }
+  /* line 185, static/css/style.scss */
+  a:hover {
+    color: #3498db;
+    text-decoration: none; }
+
+/* ===========================
+   6. Layout Components
+   =========================== */
+/* Navbar Styles */
+/* line 196, static/css/style.scss */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0; }
+  /* line 201, static/css/style.scss */
+  .navbar .navbar-brand {
+    color: #2c3e50;
+    font-family: "'Helvetica Neue', Helvetica, Arial, sans-serif";
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center; }
+    /* line 209, static/css/style.scss */
+    .navbar .navbar-brand i {
+      margin-right: 0.5rem;
+      font-size: 1.25rem; }
+    /* line 214, static/css/style.scss */
+    .navbar .navbar-brand:hover {
+      color: #3498db; }
+  /* line 219, static/css/style.scss */
+  .navbar .nav-link {
+    color: #2c3e50;
+    font-weight: 400;
+    margin-left: 1rem;
+    position: relative; }
+    /* line 225, static/css/style.scss */
+    .navbar .nav-link.active {
+      color: #3498db; }
+    /* line 229, static/css/style.scss */
+    .navbar .nav-link:hover {
+      color: #3498db; }
+    /* line 233, static/css/style.scss */
+    .navbar .nav-link.btn {
+      background-color: #2c3e50;
+      color: #fff;
+      margin-left: 0.5rem; }
+      /* line 239, static/css/style.scss */
+      .navbar .nav-link.btn:hover {
+        background-color: #1a252f; }
+  /* line 245, static/css/style.scss */
+  .navbar .navbar-toggler {
+    border: none; }
+    /* line 248, static/css/style.scss */
+    .navbar .navbar-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23444' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+
+/* Header / Carousel Styles */
+/* line 256, static/css/style.scss */
+header .carousel {
+  height: 100vh; }
+  /* line 259, static/css/style.scss */
+  header .carousel .carousel-item {
+    height: 100vh;
+    position: relative; }
+    /* line 263, static/css/style.scss */
+    header .carousel .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(70%); }
+    /* line 270, static/css/style.scss */
+    header .carousel .carousel-item .carousel-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #ecf0f1; }
+      /* line 278, static/css/style.scss */
+      header .carousel .carousel-item .carousel-caption h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem; }
+      /* line 284, static/css/style.scss */
+      header .carousel .carousel-item .carousel-caption p {
+        font-size: 1.25rem;
+        margin-bottom: 2rem; }
+      /* line 289, static/css/style.scss */
+      header .carousel .carousel-item .carousel-caption .btn {
+        background-color: #3498db;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem; }
+        /* line 296, static/css/style.scss */
+        header .carousel .carousel-item .carousel-caption .btn:hover {
+          background-color: #217dbb; }
+  /* line 303, static/css/style.scss */
+  header .carousel .carousel-indicators {
+    bottom: 20px; }
+    /* line 306, static/css/style.scss */
+    header .carousel .carousel-indicators button {
+      background-color: #ecf0f1;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin: 0 4px;
+      opacity: 0.7;
+      transition: background-color 0.3s; }
+      /* line 315, static/css/style.scss */
+      header .carousel .carousel-indicators button.active {
+        background-color: #3498db;
+        opacity: 1; }
+  /* line 322, static/css/style.scss */
+  header .carousel .carousel-control-prev-icon,
+  header .carousel .carousel-control-next-icon {
+    filter: invert(1);
+    transition: filter all 0.3s ease-in-out; }
+    /* line 327, static/css/style.scss */
+    header .carousel .carousel-control-prev-icon:hover,
+    header .carousel .carousel-control-next-icon:hover {
+      filter: invert(0.7); }
+
+/* Services Section */
+/* line 335, static/css/style.scss */
+#services {
+  padding: 2rem 0; }
+  /* line 338, static/css/style.scss */
+  #services h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+  /* line 345, static/css/style.scss */
+  #services .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem; }
+  /* line 351, static/css/style.scss */
+  #services .service-item {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    transition: transform all 0.3s ease-in-out; }
+    /* line 358, static/css/style.scss */
+    #services .service-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+    /* line 363, static/css/style.scss */
+    #services .service-item .service-icon {
+      color: #3498db;
+      font-size: 2rem;
+      margin-bottom: 0.5rem; }
+    /* line 369, static/css/style.scss */
+    #services .service-item h5 {
+      font-size: 1.25rem;
+      color: #2c3e50;
+      margin-bottom: 0.5rem; }
+    /* line 375, static/css/style.scss */
+    #services .service-item p {
+      color: #7f8c8d;
+      font-size: 0.875rem; }
+
+/* Portfolio Section */
+/* line 383, static/css/style.scss */
+#portfolio {
+  background-color: #ecf0f1;
+  padding: 2rem 0; }
+  /* line 387, static/css/style.scss */
+  #portfolio h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+  /* line 394, static/css/style.scss */
+  #portfolio .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem; }
+  /* line 400, static/css/style.scss */
+  #portfolio .portfolio-img {
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform all 0.3s ease-in-out; }
+    /* line 405, static/css/style.scss */
+    #portfolio .portfolio-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s; }
+      /* line 411, static/css/style.scss */
+      #portfolio .portfolio-img img:hover {
+        transform: scale(1.05); }
+
+/* Contact Section */
+/* line 419, static/css/style.scss */
+#contact {
+  padding: 2rem 0; }
+  /* line 422, static/css/style.scss */
+  #contact h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 0.5rem; }
+  /* line 429, static/css/style.scss */
+  #contact p {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 16px;
+    margin-bottom: 2rem; }
+  /* line 436, static/css/style.scss */
+  #contact .contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; }
+    /* line 440, static/css/style.scss */
+    #contact .contact-info p {
+      display: flex;
+      align-items: center;
+      color: #2c3e50;
+      font-size: 16px; }
+      /* line 446, static/css/style.scss */
+      #contact .contact-info p i {
+        color: #3498db;
+        margin-right: 0.5rem; }
+      /* line 451, static/css/style.scss */
+      #contact .contact-info p strong {
+        font-weight: 700; }
+    /* line 456, static/css/style.scss */
+    #contact .contact-info .social-icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem; }
+      /* line 460, static/css/style.scss */
+      #contact .contact-info .social-icons a {
+        color: #2c3e50;
+        font-size: 1.5rem;
+        transition: color all 0.3s ease-in-out; }
+        /* line 465, static/css/style.scss */
+        #contact .contact-info .social-icons a:hover {
+          color: #3498db; }
+
+/* Quote Form Section */
+/* line 474, static/css/style.scss */
+#quoteForm {
+  background-color: #2c3e50;
+  color: #ffffff;
+  padding: 2rem 0; }
+  /* line 479, static/css/style.scss */
+  #quoteForm h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+  /* line 485, static/css/style.scss */
+  #quoteForm form {
+    background-color: #3e5871;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+    /* line 491, static/css/style.scss */
+    #quoteForm form .form-label {
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      display: block; }
+    /* line 497, static/css/style.scss */
+    #quoteForm form .form-control,
+    #quoteForm form .form-select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ecf0f1;
+      border-radius: 4px;
+      font-size: 16px;
+      background-color: #ffffff;
+      color: #2c3e50;
+      transition: border-color all 0.3s ease-in-out; }
+      /* line 509, static/css/style.scss */
+      #quoteForm form .form-control:focus,
+      #quoteForm form .form-select:focus {
+        border-color: #3498db;
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2); }
+    /* line 516, static/css/style.scss */
+    #quoteForm form .btn-primary {
+      width: 100%;
+      background-color: #3498db;
+      font-size: 0.875rem; }
+      /* line 522, static/css/style.scss */
+      #quoteForm form .btn-primary:hover {
+        background-color: #217dbb; }
+    /* line 527, static/css/style.scss */
+    #quoteForm form .invalid-feedback {
+      color: #507192;
+      font-size: 0.875rem; }
+
+/* Footer Styles */
+/* line 535, static/css/style.scss */
+.footer {
+  background-color: #ecf0f1;
+  padding: 1rem 0;
+  text-align: center; }
+  /* line 540, static/css/style.scss */
+  .footer p {
+    color: #7f8c8d;
+    font-size: 0.875rem; }
+
+/* ===========================
+   7. Responsive Styles
+   =========================== */
+/* Medium Devices */
+@media (min-width: 768px) {
+  /* line 553, static/css/style.scss */
+  header .carousel-caption h1 {
+    font-size: 3rem; }
+  /* line 557, static/css/style.scss */
+  header .carousel-caption p {
+    font-size: 1.25rem; }
+  /* line 562, static/css/style.scss */
+  #services .service-item {
+    padding: 2rem; }
+  /* line 566, static/css/style.scss */
+  #portfolio .portfolio-img {
+    margin-bottom: 2rem; } }
+
+/* Large Devices */
+@media (min-width: 992px) {
+  /* line 573, static/css/style.scss */
+  .navbar .navbar-nav .nav-item {
+    margin-left: 2rem; }
+  /* line 577, static/css/style.scss */
+  #quoteForm form {
+    max-width: 800px;
+    margin: 0 auto; } }
+
+/* Extra Large Devices */
+@media (min-width: 1200px) {
+  /* line 586, static/css/style.scss */
+  header .carousel-caption h1 {
+    font-size: 4rem; }
+  /* line 590, static/css/style.scss */
+  header .carousel-caption p {
+    font-size: 1.5rem; } }
+
+/* ===========================
+   8. Advanced Techniques
+   =========================== */
+/* Loop through services to generate styles (Example) */
+/* line 602, static/css/style.scss */
+.service-item:nth-child(1) {
+  /* Custom styles per service if needed */ }
+
+/* line 602, static/css/style.scss */
+.service-item:nth-child(2) {
+  /* Custom styles per service if needed */ }
+
+/* line 602, static/css/style.scss */
+.service-item:nth-child(3) {
+  /* Custom styles per service if needed */ }
+
+/* line 602, static/css/style.scss */
+.service-item:nth-child(4) {
+  /* Custom styles per service if needed */ }
+
+/* line 602, static/css/style.scss */
+.service-item:nth-child(5) {
+  /* Custom styles per service if needed */ }
+
+/* line 602, static/css/style.scss */
+.service-item:nth-child(6) {
+  /* Custom styles per service if needed */ }
+
+/* Media Query for Dark Mode (Optional Enhancement) */
+@media (prefers-color-scheme: dark) {
+  /* line 609, static/css/style.scss */
+  body {
+    background-color: #121212;
+    color: #ffffff; }
+  /* line 614, static/css/style.scss */
+  .navbar, .footer {
+    background-color: #1e1e1e;
+    color: #ffffff; }
+  /* line 619, static/css/style.scss */
+  a {
+    color: #3498db; }
+    /* line 622, static/css/style.scss */
+    a:hover {
+      color: #8bc4ea; }
+  /* line 627, static/css/style.scss */
+  .carousel-item img {
+    filter: brightness(50%); }
+  /* Adjust other components for dark mode as needed */ }
